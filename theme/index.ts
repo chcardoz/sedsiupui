@@ -1,5 +1,6 @@
 import { extendTheme, ThemeConfig } from '@chakra-ui/react';
 import '@fontsource/inter';
+import '@fontsource/cutive';
 
 const config: ThemeConfig = {
   initialColorMode: 'dark'
@@ -8,7 +9,7 @@ const config: ThemeConfig = {
 const theme = {
   fonts: {
     body: 'Inter',
-    heading: 'Inter'
+    heading: 'Cutive'
   },
   config
 };
