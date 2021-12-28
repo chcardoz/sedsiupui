@@ -1,5 +1,6 @@
 import {
   Button,
+  Center,
   Flex,
   IconButton,
   Image,
@@ -18,11 +19,14 @@ interface NavbarProps {}
 export const Navbar: React.FC<NavbarProps> = ({}) => {
   return (
     <Flex
-      maxW="4xl"
       justifyContent="space-between"
       alignItems="center"
       py={4}
-      px={3}
+      px={{ base: 5, sm: 40, md: 50, lg: 130, xl: 250 }}
+      position="fixed"
+      w="100%"
+      background="blackAlpha.500"
+      backdropFilter="blur(30px)"
     >
       <Image src="/sedslogo.svg" h="60px" />
       <Menu>
@@ -33,9 +37,12 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
               aria-label="Navigation"
               icon={isOpen ? <IoMdClose /> : <GiHamburgerMenu />}
               variant="outline"
-              display={{ base: 'flex', sm: 'none' }}
+              display={{ base: 'flex', md: 'none' }}
             />
             <MenuList>
+              <MenuItem>
+                <Link href="#">About</Link>
+              </MenuItem>
               <MenuItem>
                 <Link href="#">Team</Link>
               </MenuItem>
@@ -56,10 +63,11 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
         )}
       </Menu>
       <Stack
-        spacing={4}
+        spacing={10}
         direction="row"
-        display={{ base: 'none', sm: 'block' }}
+        display={{ base: 'none', md: 'block' }}
       >
+        <Link href="#">About</Link>
         <Link href="#">Team</Link>
         <Link href="#">Projects</Link>
         <Link href="#">Events</Link>

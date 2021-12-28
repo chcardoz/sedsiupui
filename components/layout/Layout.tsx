@@ -6,9 +6,8 @@ interface layoutProps {}
 
 export const Layout: React.FC<layoutProps> = ({ children }) => {
   return (
-    <Center>
+    <Center paddingTop="8em">
       <Stack maxW="4xl" direction="column">
-        <Navbar />
         <Box>{children}</Box>
         <Divider />
         <Footer />
