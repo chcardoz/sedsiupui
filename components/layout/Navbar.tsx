@@ -27,8 +27,12 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
       w="100%"
       background="blackAlpha.500"
       backdropFilter="blur(30px)"
+      zindex={10}
     >
-      <Image src="/sedslogo.svg" h="60px" />
+      <Link href="/">
+        <Image src="/sedslogo.svg" h="60px" />
+      </Link>
+
       <Menu>
         {({ isOpen }) => (
           <>
@@ -41,22 +45,22 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
             />
             <MenuList>
               <MenuItem>
-                <Link href="#">About</Link>
+                <Link href="/about">About</Link>
               </MenuItem>
               <MenuItem>
-                <Link href="#">Team</Link>
+                <Link href="/team">Team</Link>
               </MenuItem>
               <MenuItem>
-                <Link href="#">Projects</Link>
+                <Link href="/projects">Projects</Link>
               </MenuItem>
               <MenuItem>
-                <Link href="#">Events</Link>
+                <Link href="/events">Events</Link>
               </MenuItem>
               <MenuItem>
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </MenuItem>
               <MenuItem>
-                <Link href="#">Home</Link>
+                <Link href="/">Home</Link>
               </MenuItem>
             </MenuList>
           </>
@@ -67,12 +71,12 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
         direction="row"
         display={{ base: 'none', md: 'block' }}
       >
-        <Link href="#">About</Link>
-        <Link href="#">Team</Link>
-        <Link href="#">Projects</Link>
-        <Link href="#">Events</Link>
-        <Link href="#">Blog</Link>
-        <Link href="#">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/team">Team</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/events">Events</Link>
+        <Link href="/blog">Blog</Link>
+        <Link href="/">Home</Link>
       </Stack>
     </Flex>
   );

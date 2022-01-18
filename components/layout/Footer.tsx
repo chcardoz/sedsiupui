@@ -23,7 +23,12 @@ export const Footer: React.FC<FooterProps> = ({}) => {
             <Box>
               <Image src="/sedslogo.svg" h="60px" />
             </Box>
-            <Text fontSize="sm">© 2021 SEDS at IUPUI. All rights reserved</Text>
+            <Text fontSize="sm">
+              © 2021 SEDS at IUPUI. All rights reserved.
+            </Text>
+            <Link fontSize="sm" href={'/notices/privacypolicy'}>
+              Privacy Policy
+            </Link>
           </Stack>
           <Stack align={'flex-start'}>
             <Link href={'#'}>Overview</Link>

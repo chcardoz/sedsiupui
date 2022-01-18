@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <>
       <Navbar />
       <Layout>
-        <Stack direction="column" spacing={4} px={5}>
+        <Stack direction="column" spacing={4}>
           <Heading fontSize="5xl">
             Inspiration4 launches first all-civilian mission to orbit.
           </Heading>
