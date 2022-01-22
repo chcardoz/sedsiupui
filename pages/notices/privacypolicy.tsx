@@ -13,7 +13,9 @@ const PrivacyPolicy: React.FC = () => {
     <>
       <Navbar />
       <Layout>
-        <Heading as="h1">Privacy Policy</Heading>
+        <Heading color="secondary.400" as="h1">
+          Privacy Policy
+        </Heading>
         <Text as="i">Last updated January 17, 2022</Text>
         <Text paddingTop={5}>
           Thank you for choosing to be part of our community at SEDS at IUPUI

@@ -31,26 +31,29 @@ export const Footer: React.FC<FooterProps> = ({}) => {
             </Link>
           </Stack>
           <Stack align={'flex-start'}>
-            <Link href={'#'}>Overview</Link>
-            <Link href={'#'}>Features</Link>
-            <Link href={'#'}>Tutorials</Link>
-            <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Releases</Link>
+            <Text color="secondary.400" fontWeight="semibold">
+              Organization
+            </Text>
+            <Link href={'/about'}>About</Link>
+            <Link href={'/join'}>Join us</Link>
+            <Link href={'/contact'}>Contact</Link>
+            <Link href="/donate">Donate</Link>
+            <Link href={'/sponsors'}>Sponsors</Link>
           </Stack>
           <Stack align={'flex-start'}>
-            <Text fontWeight="semibold">Organization</Text>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Join us</Link>
-            <Link href={'#'}>Contact</Link>
-            <Link href="#">Donate</Link>
-            <Link href={'#'}>Sponsors</Link>
-          </Stack>
-          <Stack align={'flex-start'}>
-            <Text fontWeight="semibold">Connect with us</Text>
-            <Link href={'#'}>Facebook</Link>
-            <Link href={'#'}>Twitter</Link>
-            <Link href={'#'}>Instagram</Link>
-            <Link href="#">YouTube</Link>
+            <Text color="secondary.400" fontWeight="semibold">
+              Connect with us
+            </Text>
+            <Link href={'https://www.linkedin.com/company/seds-at-iupui'}>
+              Linkedin
+            </Link>
+            <Link href={'https://twitter.com/sedsiupui'}>Twitter</Link>
+            <Link href={'https://www.instagram.com/studentexplorers/'}>
+              Instagram
+            </Link>
+            <Link href="https://www.youtube.com/channel/UCfWspur2Ki34J8oQZUpIkiw#">
+              YouTube
+            </Link>
           </Stack>
         </SimpleGrid>
       </Container>

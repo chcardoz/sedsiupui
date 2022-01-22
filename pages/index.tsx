@@ -2,6 +2,7 @@ import { Box, Heading, Stack, Text } from '@chakra-ui/react';
 import { Layout } from '../components/layout/Layout';
 import Image from 'next/image';
 import { Navbar } from '../components/layout/Navbar';
+import { AnimatedHeading } from '../components/layout/AnimatedHeading';
 
 const Home: React.FC = () => {
   return (
@@ -9,9 +10,9 @@ const Home: React.FC = () => {
       <Navbar />
       <Layout>
         <Stack direction="column" spacing={4}>
-          <Heading fontSize="5xl">
+          <AnimatedHeading fontSize="5xl">
             Inspiration4 launches first all-civilian mission to orbit.
-          </Heading>
+          </AnimatedHeading>
           <video
             autoPlay
             loop
