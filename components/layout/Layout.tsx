@@ -2,7 +2,7 @@ import { Box, Center, Divider, Stack } from '@chakra-ui/react';
 import dynamic from 'next/dynamic';
 import { Footer } from './Footer';
 
-const StarBackground = dynamic((() => import('./StarBackground')) as any, {
+const StarBackground = dynamic((() => import('../StarBackground')) as any, {
   ssr: false
 });
 
@@ -12,11 +12,13 @@ export const Layout: React.FC<layoutProps> = ({ children }) => {
   return (
     <>
       {/* <StarBackground /> */}
-      <Center paddingTop="8em" px={5}>
-        <Stack maxW="4xl" direction="column">
+      <Center paddingTop="5.5em" zIndex={1}>
+        <Stack direction="column">
           <Box>{children}</Box>
-          <Divider />
-          <Footer />
+          <Box px={10}>
+            <Divider />
+            <Footer />
+          </Box>
         </Stack>
       </Center>
     </>

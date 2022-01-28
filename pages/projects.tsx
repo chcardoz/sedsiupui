@@ -1,5 +1,5 @@
 import { Heading } from '@chakra-ui/react';
-import { AnimatedHeading } from '../components/layout/AnimatedHeading';
+import { AnimatedHeading } from '../components/AnimatedHeading';
 import { Layout } from '../components/layout/Layout';
 import { Navbar } from '../components/layout/Navbar';
 

@@ -2,7 +2,7 @@ import { Heading } from '@chakra-ui/react';
 import { Layout } from '../components/layout/Layout';
 import { Navbar } from '../components/layout/Navbar';
 import { motion } from 'framer-motion';
-import { AnimatedHeading } from '../components/layout/AnimatedHeading';
+import { AnimatedHeading } from '../components/AnimatedHeading';
 
 const About: React.FC = () => {
   return (

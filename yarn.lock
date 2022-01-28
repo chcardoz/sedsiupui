@@ -724,6 +724,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
+"@fontsource/days-one@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/days-one/-/days-one-4.5.1.tgz#adccb820ec7b74b08eee880cef9a2f8037bea2c9"
+  integrity sha512-AVJ6czrb5ikmd0aGe0fTJ6HNl0cuKsgD4FnAaJLfXio8lmALqG3QxZugjHf/7LBN8skRPrBN4LECSdhvjSithw==
+
 "@fontsource/inter@^4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.1.tgz#058d8a02354f3c78e369d452c15d33557ec1b705"

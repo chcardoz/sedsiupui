@@ -27,7 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
       w="100%"
       background="blackAlpha.500"
       backdropFilter="blur(30px)"
-      zindex={10}
+      zIndex={5}
     >
       <Link href="/">
         <Image src="/sedslogo.svg" h="60px" />

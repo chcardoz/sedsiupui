@@ -1,6 +1,6 @@
 import { Heading, HTMLChakraProps, ThemingProps } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import slideFromBelow from '../../animation/common/slideFromBelow';
+import slideFromBelow from '../animation/common/slideFromBelow';
 
 interface animatedHeadingProps
   extends HTMLChakraProps<'h2'>,
