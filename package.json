@@ -4,33 +4,32 @@
   "private": true,
   "description": "Official website of SEDS at IUPUI student organization",
   "scripts": {
+    "frontend": "next dev",
     "dev": "concurrently \"next dev\" \"cd studio && sanity start\"",
     "build": "echo 'Building Sanity to public/studio...' && cd studio && sanity build ../public/studio -y && cd .. & next build",
     "start": "next start",
     "postinstall": "npx lerna bootstrap"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.7.4",
-    "@emotion/react": "^11.7.1",
-    "@emotion/styled": "^11.6.0",
-    "@fontsource/days-one": "^4.5.1",
+    "@babel/core": ">=7.0.0 <8.0.0",
     "@fontsource/inter": "^4.5.1",
     "@fontsource/nunito-sans": "^4.5.1",
-    "@inlet/react-pixi": "^6.6.5",
     "@sanity/client": "^3.0.3",
     "@sanity/image-url": "^1.0.1",
-    "framer-motion": "^5.3.0",
     "next": "12.0.8",
     "next-sanity": "^0.4.0",
+    "prop-types": "^15.7.2",
     "react": "17.x",
     "react-dom": "17.x",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@types/react": "^17.0.38",
+    "autoprefixer": "^10.4.7",
     "concurrently": "^7.0.0",
     "lerna": "^4.0.0",
-    "pixi.js": "^6.2.1",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4",
     "typescript": "^4.5.5"
   },
   "prettier": {
@@ -38,5 +37,18 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
+  },
+  "pnpm": {
+    "overrides": {
+      "url-parse@<1.5.9": ">=1.5.9",
+      "url-parse@<1.5.8": ">=1.5.8",
+      "next@>=10.0.0 <12.1.0": ">=12.1.0",
+      "url-parse@<1.5.6": ">=1.5.6",
+      "follow-redirects@<1.14.8": ">=1.14.8",
+      "url-parse@<1.5.7": ">=1.5.7",
+      "next@>=12.0.0 <12.0.9": ">=12.0.9",
+      "node-fetch@<2.6.7": ">=2.6.7",
+      "eventsource@<1.1.1": ">=1.1.1"
+    }
   }
 }
